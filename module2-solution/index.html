@@ -1,10 +1,258 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Solutions to module 2</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assignment Solution for Module 2</title>
+<style type="text/css">
+  * {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 35px;
+  text-align: center;
+  font-family: "verdana", "arial", sans-serif;
+  color: #370E08;
+
+}
+
+.menu {
+  background-color: #999999;
+  border: 1px solid black;
+  margin: 20px;
+ }
+
+.labelchicken {
+  background-color: #D59898;
+  font-family: "verdana", "arial", sans-serif;
+  color: #07010B;
+  font-weight: bold;
+  width: 160px;
+  text-align: center;
+  padding: 5px 20px 5px 20px;
+  margin: 0px;
+  border: 1px solid black;
+  float: right;
+}
+
+.labelbeef {
+  background-color: #C14543;
+  font-family: "verdana", "arial", sans-serif;
+  color: #EEEEEE;
+  font-weight: bold;
+  width: 160px;
+  text-align: center;
+  padding: 5px 20px 5px 20px;
+  margin: 0px;
+  border: 1px solid black;
+  float: right;
+}
+
+.labelsushi {
+  background-color: #E5D198;
+  font-family: "verdana", "arial", sans-serif;
+  color: #07010B;
+  font-weight: bold;
+  width: 160px;
+  text-align: center;
+  padding: 5px 20px 5px 20px;
+  margin: 0px;
+  border: 1px solid black;
+  float: right;
+}
+
+.row {
+  width: 100%;
+}  
+
+.pchicken {
+   padding: 40px 10px 10px 10px;
+   font-family: "verdana", "arial", sans-serif;
+   color: #333333;
+}
+
+.pbeef {
+   padding: 40px 10px 10px 10px;
+   font-family: "verdana", "arial", sans-serif;
+   color: #333333;
+}
+
+.psushi {
+   padding: 40px 10px 10px 10px;
+   font-family: "verdana", "arial", sans-serif;
+   color: #333333;
+}
+
+
+@media (min-width: 992px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+}
+  .col-sm-1 {
+    width: 8.33%;
+  }
+  .col-sm-2 {
+    width: 16.66%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-4 {
+    width: 33.33%;
+  }
+  .col-sm-5 {
+    width: 41.66%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-7 {
+    width: 58.33%;
+  }
+  .col-sm-8 {
+    width: 66.66%;
+  }
+  .col-sm-9 {
+    width: 74.99%;
+  }
+  .col-sm-10 {
+    width: 83.33%;
+  }
+  .col-sm-11 {
+    width: 91.66%;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+    clear: both;
+  }
+  .col-xs-1 {
+    width: 8.33%;
+  }
+  .col-xs-2 {
+    width: 16.66%;
+  }
+  .col-xs-3 {
+    width: 25%;
+  }
+  .col-xs-4 {
+    width: 33.33%;
+  }
+  .col-xs-5 {
+    width: 41.66%;
+  }
+  .col-xs-6 {
+    width: 50%;
+  }
+  .col-xs-7 {
+    width: 58.33%;
+  }
+  .col-xs-8 {
+    width: 66.66%;
+  }
+  .col-xs-9 {
+    width: 74.99%;
+  }
+  .col-xs-10 {
+    width: 83.33%;
+  }
+  .col-xs-11 {
+    width: 91.66%;
+  }
+  .col-xs-12 {
+    width: 100%;
+  }
+}
+
+
+
+
+</style>
+
+
 </head>
+
 <body>
-<h1>Solutions to module 2</h1>
+
+<h1>Our Menu</h1>
+
+<div class="row">
+  <div class="col-md-4 col-sm-6 col-xs-12">
+    <div class="menu">
+      <p class="labelchicken">Chicken</p>
+    <div class="pchicken">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut arcu dolor, fringilla et hendrerit vitae, porttitor sed nunc. Praesent tellus lectus, gravida eget dolor nec, vehicula gravida felis. Mauris posuere nec tellus sed semper. Phasellus nec velit tincidunt, lobortis quam vitae, varius nibh.
+    </div>
+    </div>
+  </div>
+
+ <div class="col-md-4 col-sm-6 col-xs-12">
+  <div class="menu">
+  <p class="labelbeef">Beef</p>
+   <div class="pbeef">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut arcu dolor, fringilla et hendrerit vitae, porttitor sed nunc. Praesent tellus lectus, gravida eget dolor nec, vehicula gravida felis. Mauris posuere nec tellus sed semper. Phasellus nec velit tincidunt, lobortis quam vitae, varius nibh.
+  </div>
+  </div>
+  </div>
+
+  <div class="col-md-4 col-sm-12 col-xs-12">
+  <div class="menu">
+  <p class="labelsushi">Sushi</p>
+   <div class="psushi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut arcu dolor, fringilla et hendrerit vitae, porttitor sed nunc. Praesent tellus lectus, gravida eget dolor nec, vehicula gravida felis. Mauris posuere nec tellus sed semper. Phasellus nec velit tincidunt, lobortis quam vitae, varius nibh.
+  </div>
+  </div>
+  </div>
+
+
+
+
+  </div>
+
 </body>
 </html>
